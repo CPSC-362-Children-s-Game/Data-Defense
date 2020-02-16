@@ -14,8 +14,7 @@ private:
 
 public:
 
-void updateHp();
-	
+	void updateHp();	
 
 	void renderHpBar(sf::RenderTarget& target);
 	void render(sf::RenderTarget& target);
