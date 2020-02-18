@@ -4,6 +4,7 @@
 PlayGui::PlayGui()
 {
 	this->initHpBar();
+	this->initFont();
 }
 
 PlayGui::~PlayGui()
