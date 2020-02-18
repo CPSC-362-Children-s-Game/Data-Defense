@@ -1,33 +1,30 @@
-#include <iostream>
-#include <iomanip>
-#include <cstdlib>
-#include <string>
-#include <cstring>
-using namespace std;
+int main(int argc, const char * argv[]) {
 
-const string NOUNS[]={ "giraffe", "tiger", "fox", "panther", "aardvark", "bear"};
-//const int numNOUN = 6;
-const string VERBS[]={"ate", "marched", "slept"};
-//const int numVERB = 3;
-const string ADVERBS[]={"heartily", "quickly", "backwards", "slowly"};
-//const int numADVERB = 4;
-const string ARTICLES[]= {"The", "This", "A", "That"};
-//const int numART = 4;
+//=========== load words.txt file ===========================
+    const std::string filename = "words.txt";
+    std::ifstream ifs(filename);
 
-string random_wordpick(const string a[], const int x); // pick a random word from the list.
+    if (!ifs.is_open()){
+        std::cerr << "Could not open file:" << filename << "\n";
+        exit(1);
+    }
 
-//----------------------------------------------------------------------------------
+    std::vector<std::string> words;
 
-string random_word(const string a[], const int x){
-string randomword;
-  
-int i = rand() % x + 1;
-cout << "index = " << i << endl;
-randomword = a[rand() % x];
-cout << "random word = " << a[i] << endl;
-randomword= a[i];
-return randomword;
-  
+    std::string input;
+    while(ifs >> input){
+        words.push_back(input);
+    }
+
+    ifs.close();
+
+//========== pick random words from words.txt file =============
+   srand((unsigned)time(0));
+   int index = rand() % words.size();   // get a random of number of line
+   std::cout << words[index] << "\n";  // random word of line
+    std::cout <<
+
+    return 0;
 }
 
 
