@@ -1,4 +1,5 @@
 #include "Game.h"
+#include "Hpbar.h"
 
 //Constructors and Destructor
 Game::Game() {
@@ -35,7 +36,6 @@ void Game::update() {
 
 	this->pollEvents();
 	this->updateEnemies();
-
 }
 
 void Game::render() {
