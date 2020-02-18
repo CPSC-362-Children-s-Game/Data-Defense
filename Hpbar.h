@@ -8,10 +8,7 @@ private:
 	
 
 	float hpbarsize;
-	//font
 	
-	sf::VideoMode& vm;
-
 	//HP
 	std::string hpBarstring;
 	sf::Text hpBartext;
