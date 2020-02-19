@@ -44,7 +44,7 @@ void Menu::Display(sf::RenderWindow &window)
 {
    for(int i = 0; i < ITEMS; i++)
    {
-      window.Display(menu[i]);
+      window.draw(menu[i]);
 
    }
 
