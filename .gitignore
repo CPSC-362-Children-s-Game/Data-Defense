@@ -1,10 +1,9 @@
 /.vs
 /Debug
-/Assignment1.sln
 /Assignment1/Debug
-/Assignment1/Assignment1.vcxproj
-/Assignment1/Assignment1.vcxproj.filters
-/Assignment1/Assignment1.vcxproj.user
+/Assignment1.vcxproj
+/Assignment1.vcxproj.filters
+/Assignment1.vcxproj.user
 /x64
 /sfml-audio-2.dll
 /sfml-graphics-2.dll
