@@ -24,6 +24,12 @@
     <ClCompile Include="Hpbar.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="menumain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Starting_Menu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="game.h">
@@ -33,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Hpbar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Starting_Menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
