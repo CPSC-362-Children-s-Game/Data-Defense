@@ -1,4 +1,7 @@
 #pragma once
+#ifndef MAINMENU_H
+#define MAINMENU_H
+
 #include <SFML/Graphics.hpp>
 
 #define ITEMS 4
@@ -23,3 +26,5 @@ private:
       sf::Text menu[ITEMS];
 
 };
+
+#endif
