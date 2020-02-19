@@ -2,6 +2,8 @@
 
 Menu::Menu(float wid, float hei)
 {
+    font.loadFromFile("arial.ttf");
+    
     if (!font.loadFromFile("arial.ttf"))
     {
           //Error
