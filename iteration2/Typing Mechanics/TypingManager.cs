@@ -55,7 +55,7 @@ public class Word
 
     public Word(string t)
     {
-        text = t
+        text = t;
         hasTyped = " ";
         currentChar = 0;
     }
