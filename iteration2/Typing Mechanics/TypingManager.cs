@@ -1,3 +1,6 @@
+/*This is a basic typing mechanic for the game Data Defense. This allows the user to be able to type the word
+ that the picture displays on the screen. If the user gets the word correct, the user will be able to inflict
+ damage onto the opponent. If guessed wrong or typed incorrectly, the user will take damage.*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -75,7 +78,7 @@ public class Word
 
             return true;
         }
-        else
+        else                                //if the user has unsuccessfully typed out the entire word
         {
             currentChar = 0;
             hasTyped = " ";
