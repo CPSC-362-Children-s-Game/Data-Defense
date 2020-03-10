@@ -25,7 +25,7 @@ public class TypingManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        string input = Input.inputString;
+        string input = Input.inputString.ToLower();
         if (input.Equals(""))           //if we are no typing
         {
             return;  //Stops this function here
