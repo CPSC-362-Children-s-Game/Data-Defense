@@ -13,8 +13,8 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        movement.x = 0;
-        movement.y = -1;
+        movement.x = 0f;
+        movement.y = -0.5f;
     }
 
     void Update()
