@@ -8,8 +8,8 @@ public class Healthsystem
    int health;
    int healthMax;
 
-   public event Eventhandler HealthChanged;
-   public event Eventhandler Dead;
+   public event EventHandler HealthChanged;
+   public event EventHandler Dead;
 
    public Healthsystem(int healthMax)
    {
