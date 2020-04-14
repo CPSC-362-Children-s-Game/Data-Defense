@@ -15,6 +15,7 @@ public class GameController : MonoBehaviour
     void Update() {
         if (Input.GetKeyDown(KeyCode.Space)) {
             shoot();
+            SoundManager.PlaySound("playerAttack");
         }
     }
     void shoot() {

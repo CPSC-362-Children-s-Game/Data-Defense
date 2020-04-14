@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
     public int damage = 40;
     public string word = "cat";
 
+    public bool shield = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -27,12 +29,20 @@ public class Enemy : MonoBehaviour
         if (other.tag == "Barrier")
         {
             other.GetComponent<Barrier>().health -= damage;
+            if (other.GetComponent<Barrier>().health > 0)
+                SoundManager.PlaySound("playerHit");
             Destroy(gameObject);
         }
-        else if (other.tag == "Bullet")
+        else if (other.tag == "Bullet" && shield == false)
         {
+            SoundManager.PlaySound("enemyDeath");
             Destroy(gameObject);
             Destroy(other.gameObject);
+        }
+        else if (other.tag == "Bullet" && shield == true)
+        {
+            Destroy(other.gameObject);
+            SoundManager.PlaySound("enemyImmune");
         }
     }
 }
