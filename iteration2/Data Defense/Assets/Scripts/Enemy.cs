@@ -33,6 +33,14 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
             Destroy(other.gameObject);
+
+            if (EnemySpawner.spawnTime > 1f) {
+                EnemySpawner.spawnTime -= .5f;
+            }
+
+            if (GameController.wordLength < 10) {
+                GameController.wordLength += 1;
+            }
         }
     }
 }

@@ -5,13 +5,13 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemy;
-    public float spawnTime = 5f;
+    public static float spawnTime = 5f;
     private Vector2 spawnPosition;
 
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("Spawn", spawnTime, spawnTime);
+        InvokeRepeating("Spawn", 0, spawnTime);
     }
 
     void Spawn()
@@ -21,6 +21,4 @@ public class EnemySpawner : MonoBehaviour
 
         Instantiate(enemy, spawnPosition, Quaternion.identity);
     }
-
-  
 }

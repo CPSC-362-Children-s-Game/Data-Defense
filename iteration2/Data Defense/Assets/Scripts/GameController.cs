@@ -6,6 +6,7 @@ public class GameController : MonoBehaviour
 {
     public GameObject player;
     public GameObject bullet;
+    public static int wordLength = 0;
 
     // Start is called before the first frame update
     void Start() {
@@ -13,7 +14,7 @@ public class GameController : MonoBehaviour
     }
 
     void Update() {
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.UpArrow)) {
             shoot();
         }
     }
