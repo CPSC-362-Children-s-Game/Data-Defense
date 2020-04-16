@@ -26,7 +26,7 @@ public class TypingManager : MonoBehaviour
     void Update()
     {
         string input = Input.inputString.ToLower();
-        if (input.Equals(""))           //if we are no typing
+        if (input.Equals(""))           //if we are not typing
         {
             return;  //Stops this function here
         }
